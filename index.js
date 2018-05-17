@@ -2,11 +2,10 @@ const express = require('express');
 
 const app = express();
 
-const PORT = process.env.port || 3000;
+const PORT = PROCESS.ENV.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.json({ hi: 'hello there' });
-  res.end();
+  res.send({ hi: 'hello there' });
 });
 
 app.listen(PORT, () => {
