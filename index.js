@@ -8,6 +8,10 @@ app.get('/', (req, res) => {
   res.send({ hi: 'hello there' });
 });
 
+app.get('/two', (req, res) => {
+  res.json('A second route');
+});
+
 app.listen(PORT, () => {
   console.log(`Now listening on port ${PORT}`);
 });
